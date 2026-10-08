@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <title>Vincent Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <a class="logo" href="#home" data-aos="zoom-in" data-aos-duration="1000">Vincent<span>.</span></a>
+            <div class="links">
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100"><a href="#home">Home</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200"><a href="#about">About</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300"><a href="#skills">Skills</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400"><a href="#projects">Projects</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500"><a href="#education">Education</a></div>
+                <div class="link contact-btn" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600"><a href="#contact">Contact</a></div>
+            </div>
+            <a class="nav-status" href="#contact" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="700"><span class="live" aria-hidden="true"></span>Open to internships</a>
+            <button type="button" class="hamburg" onclick="hamburg()" aria-label="Open menu" aria-controls="mobile-menu" aria-expanded="false"><i class="fa-solid fa-bars" aria-hidden="true"></i></button>
+        </div>
+        <div class="dropdown" id="mobile-menu">
+            <div class="links">
+                <a href="#home" onclick="cancel()">Home</a>
+                <a href="#about" onclick="cancel()">About</a>
+                <a href="#skills" onclick="cancel()">Skills</a>
+                <a href="#projects" onclick="cancel()">Projects</a>
+                <a href="#education" onclick="cancel()">Education</a>
+                <a href="#contact" onclick="cancel()">Contact</a>
+                <button type="button" class="cancel" onclick="cancel()" aria-label="Close menu"><i class="fa-solid fa-xmark" aria-hidden="true"></i></button>
+            </div>
+        </div>
+    </nav>
+        <section id="home">
+            <div class="hero">
+                <div class="hero-photo">
+                    <span class="photo-glow" aria-hidden="true"></span>
+                    <span class="photo-orbit" aria-hidden="true"></span>
+                    <div class="photo-frame">
+                        <img src="main.jpeg" alt="Portrait of Vincent">
+                    </div>
+                    <span class="photo-badge badge-1"><i class="fa-solid fa-cloud"></i>Cloud Engineer</span>
+                    <span class="photo-badge badge-2"><i class="fa-solid fa-code"></i>Software Dev</span>
+                    <span class="photo-badge badge-3"><i class="fa-solid fa-brain"></i>AI Enthusiast</span>
+                </div>
+
+                <div class="hero-content">
+                    <p class="hero-kicker">Cloud Engineer &middot; BINUS University</p>
+                    <h1 class="hero-title">
+                        <span class="hero-hey">Hey, I'm</span>
+                        <span class="reveal"><span>Vincent</span></span>
+                    </h1>
+                    <div class="typewriter">I'm a <span></span></div>
+                    <p class="hero-text">A student at BINUS University @Bandung and a Cloud Engineer who loves building reliable, scalable infrastructure in the cloud. Beyond the cloud, I'm passionate about software development and artificial intelligence, turning ideas into smart solutions that create real impact.</p>
+                    <div class="hero-actions">
+                        <button class="btn-solid">Download CV</button>
+                        <a class="btn-ghost" href="#projects">Explore my work <i class="fa-solid fa-arrow-down"></i></a>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://github.com/httpsvincent" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.facebook.com/vincentius.christian.hermawan" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.linkedin.com/in/vincentius-christian-hermawan-144aa9350" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="marquee" aria-hidden="true">
+                <div class="marquee-track">
+                    <span>Cloud Computing</span><span>Docker</span><span>Python</span><span>JavaScript</span><span>PHP</span><span>SQL</span><span>REST API</span><span>Git</span><span>Deep Learning</span>
+                    <span>Cloud Computing</span><span>Docker</span><span>Python</span><span>JavaScript</span><span>PHP</span><span>SQL</span><span>REST API</span><span>Git</span><span>Deep Learning</span>
+                </div>
+            </div>
+        </section>
+        <section id="about">
+            <div class="about-wrap">
+                <header class="section-head about-head" data-aos="fade-up" data-aos-duration="900">
+                    <h2>About Me</h2>
+                </header>
+
+                <div class="about-body" data-aos="fade-up" data-aos-duration="900" data-aos-delay="100">
+                    <p class="about-lead">I'm Vincent, a Computer Science student at BINUS University Bandung and a <em>cloud engineer</em> who cares about what happens after the code ships.</p>
+                    <p>I turn ideas into working software, mostly web systems and AI-driven tools. Now sharpening my skills in cloud deployment and deep learning, and open to internships in Software Engineering or Cloud/Backend Development.</p>
+                </div>
+
+                <aside class="about-meta" aria-label="Quick facts" data-aos="fade-up" data-aos-duration="900" data-aos-delay="200">
+                    <dl>
+                        <div><dt>Based in</dt><dd>Bandung, Indonesia</dd></div>
+                        <div><dt>Studying</dt><dd>Computer Science, BINUS University</dd></div>
+                        <div><dt>Role</dt><dd>Cloud Engineer</dd></div>
+                        <div><dt>Also into</dt><dd>Software development, AI</dd></div>
+                        <div><dt>Currently</dt><dd><span class="live" aria-hidden="true"></span>Learning cloud deployment &amp; deep learning</dd></div>
+                        <div><dt>Open to</dt><dd>Software Engineer or Cloud/Backend internship</dd></div>
+                    </dl>
+                </aside>
+            </div>
+        </section>
+        <section id="skills">
+            <div class="skills-wrap">
+                <header class="section-head skills-head" data-aos="fade-up" data-aos-duration="900">
+                    <h2>Skills</h2>
+                    <p class="section-sub">What I build with day to day, and what I'm picking up next.</p>
+                </header>
+
+                <div class="skills-grid">
+                    <article class="skill-card is-wide" data-aos="fade-up" data-aos-duration="900" data-aos-delay="0">
+                        <div class="skill-top">
+                            <span class="skill-num">01</span>
+                            <h3>Languages</h3>
+                            <i class="fa-solid fa-terminal" aria-hidden="true"></i>
+                        </div>
+                        <ul class="skill-tiles">
+                            <li style="--c:#4b8bbe"><i class="fa-brands fa-python"></i><span>Python</span></li>
+                            <li style="--c:#8892bf"><i class="fa-brands fa-php"></i><span>PHP</span></li>
+                            <li style="--c:#f7df1e"><i class="fa-brands fa-js"></i><span>JavaScript</span></li>
+                            <li style="--c:#f29111"><i class="fa-solid fa-database"></i><span>SQL</span></li>
+                        </ul>
+                    </article>
+
+                    <article class="skill-card" data-aos="fade-up" data-aos-duration="900" data-aos-delay="100">
+                        <div class="skill-top">
+                            <span class="skill-num">02</span>
+                            <h3>Web &amp; Backend</h3>
+                            <i class="fa-solid fa-globe" aria-hidden="true"></i>
+                        </div>
+                        <ul class="skill-tiles">
+                            <li style="--c:#ff2d20"><i class="fa-brands fa-laravel"></i><span>Laravel</span></li>
+                            <li style="--c:#4aa3c0"><i class="fa-solid fa-table"></i><span>MySQL</span></li>
+                            <li style="--c:#e34f26"><i class="fa-brands fa-html5"></i><span>HTML</span></li>
+                            <li style="--c:#2d9cdb"><i class="fa-brands fa-css3-alt"></i><span>CSS</span></li>
+                            <li style="--c:#6ee7b7"><i class="fa-solid fa-plug"></i><span>REST API</span></li>
+                        </ul>
+                    </article>
+
+                    <article class="skill-card" data-aos="fade-up" data-aos-duration="900" data-aos-delay="0">
+                        <div class="skill-top">
+                            <span class="skill-num">03</span>
+                            <h3>AI &amp; Data</h3>
+                            <i class="fa-solid fa-microchip" aria-hidden="true"></i>
+                        </div>
+                        <ul class="skill-tiles">
+                            <li style="--c:#ff6f00"><i class="fa-solid fa-brain"></i><span>TensorFlow</span></li>
+                            <li style="--c:#c084fc"><i class="fa-solid fa-eye"></i><span>Image Classification</span></li>
+                            <li style="--c:#a78bfa"><i class="fa-solid fa-chart-line"></i><span>Pandas</span></li>
+                        </ul>
+                    </article>
+
+                    <article class="skill-card" data-aos="fade-up" data-aos-duration="900" data-aos-delay="100">
+                        <div class="skill-top">
+                            <span class="skill-num">04</span>
+                            <h3>Tools</h3>
+                            <i class="fa-solid fa-screwdriver-wrench" aria-hidden="true"></i>
+                        </div>
+                        <ul class="skill-tiles">
+                            <li style="--c:#f05032"><i class="fa-brands fa-git-alt"></i><span>Git</span></li>
+                            <li style="--c:#f2f2f2"><i class="fa-brands fa-github"></i><span>GitHub</span></li>
+                            <li style="--c:#2496ed"><i class="fa-brands fa-docker"></i><span>Docker</span></li>
+                            <li style="--c:#3b9ced"><i class="fa-solid fa-code"></i><span>VS Code</span></li>
+                        </ul>
+                    </article>
+
+                    <article class="skill-card is-learning" data-aos="fade-up" data-aos-duration="900" data-aos-delay="200">
+                        <div class="skill-top">
+                            <span class="skill-num">05</span>
+                            <h3>Learning</h3>
+                            <span class="skill-status"><span class="live" aria-hidden="true"></span>In progress</span>
+                        </div>
+                        <ul class="skill-tiles">
+                            <li style="--c:#7dd3fc"><i class="fa-solid fa-cloud"></i><span>Cloud Computing</span></li>
+                            <li style="--c:#f472b6"><i class="fa-solid fa-network-wired"></i><span>Deep Learning</span></li>
+                        </ul>
+                    </article>
+                </div>
+
+                <div class="skills-marquee" aria-hidden="true">
+                    <div class="marquee-track">
+                        <span>Python</span><span>Laravel</span><span>PHP</span><span>TensorFlow</span><span>MySQL</span><span>JavaScript</span><span>Docker</span><span>Git</span>
+                        <span>Python</span><span>Laravel</span><span>PHP</span><span>TensorFlow</span><span>MySQL</span><span>JavaScript</span><span>Docker</span><span>Git</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="projects">
+            <div class="projects-wrap">
+                <header class="section-head" data-aos="fade-up" data-aos-duration="900">
+                    <h2>Projects</h2>
+                    <p class="section-sub">Things I've built and shipped, from small experiments to full apps.</p>
+                </header>
+
+                <div class="project-list">
+                    <article class="project" data-aos="fade-up" data-aos-duration="900">
+                        <span class="project-num">01</span>
+                        <div class="project-main">
+                            <h3>Sistem Rumah Kost</h3>
+                            <p>A boarding house management web app built with Laravel, handling rooms, tenants and payments in one dashboard.</p>
+                            <ul class="project-tags">
+                                <li>Laravel</li>
+                                <li>PHP</li>
+                                <li>Blade</li>
+                                <li>MySQL</li>
+                            </ul>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/httpsvincent/Sistem-Rumah-Kost" target="_blank" rel="noopener noreferrer" aria-label="Sistem Rumah Kost on GitHub"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                    </article>
+
+                    <article class="project" data-aos="fade-up" data-aos-duration="900" data-aos-delay="100">
+                        <span class="project-num">02</span>
+                        <div class="project-main">
+                            <h3>Herbal Leaf Disease Detector</h3>
+                            <p>A website that detects diseases on herbal plant leaves from an uploaded photo, using a deep learning image classification model.</p>
+                            <ul class="project-tags">
+                                <li>Python</li>
+                                <li>TensorFlow</li>
+                                <li>Deep Learning</li>
+                                <li>Web</li>
+                            </ul>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/httpsvincent/Herbal-Leaf-Disease-Detector-Website" target="_blank" rel="noopener noreferrer" aria-label="Herbal Leaf Disease Detector on GitHub"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                    </article>
+                </div>
+                <a class="more-link" href="https://github.com/httpsvincent?tab=repositories" target="_blank" rel="noopener noreferrer" data-aos="fade-up" data-aos-duration="900">See everything on GitHub <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+        </section>
+        <section id="education">
+            <div class="education-wrap">
+                <header class="section-head" data-aos="fade-up" data-aos-duration="900">
+                    <h2>Education</h2>
+                </header>
+
+                <ol class="timeline">
+                    <li class="timeline-item" data-aos="fade-up" data-aos-duration="900" data-aos-delay="100">
+                        <span class="timeline-date">Present</span>
+                        <div class="timeline-body">
+                            <h3>BINUS University, Bandung</h3>
+                            <p class="timeline-sub">Bachelor of Computer Science</p>
+                            <p>Studying software engineering, data and systems, while building cloud and AI projects on the side.</p>
+                        </div>
+                    </li>
+                </ol>
+            </div>
+        </section>
+        <section id="contact">
+            <div class="contact-wrap" data-aos="fade-up" data-aos-duration="900">
+                <p class="contact-kicker">Open to internships</p>
+                <h2>Let's build something <span>together.</span></h2>
+                <p class="section-sub">Looking for a Software Engineer or Cloud/Backend intern? Send me a message and I'll get back to you.</p>
+                <div class="contact-links">
+                    <a class="contact-primary" href="https://www.linkedin.com/in/vincentius-christian-hermawan-144aa9350" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i>Message me on LinkedIn</a>
+                    <a href="https://github.com/httpsvincent" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i>GitHub</a>
+                    <a href="https://www.facebook.com/vincentius.christian.hermawan" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook"></i>Facebook</a>
+                </div>
+            </div>
+        </section>
+        <footer class="site-footer">
+            <p>&copy; <span id="year"></span> Vincent. Built by hand in Bandung.</p>
+        </footer>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script src="script.js"></script>
+</body>
+</html>
